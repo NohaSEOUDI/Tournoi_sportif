@@ -1,0 +1,73 @@
+http://localhost:8000/inscrireDesJhtml.php
+jour:06/11/2020
+
+foot: 16 equipes  (grp=poule) 1 1 1 1 ....
+1.des éliminatoire --> niveau de chaque équipe 
+donnent un classement des équipes en fonction du niveau
+2.tirage au sort(méthode du serpentin ...) des 4 premiers équipes c les best
+ne pas les mettre dans le meme grp
+faire une répartition pour les équipes restante
+debut du tournoi:1er tour
+grpA 4e-->2 (1/2 finale croisé)      -->1  -->1(2eme place)
+grpB 4e-->2		    	     -->1
+grpC 4e-->2                          -->1  -->1--->1(chompion)
+grpD 4e-->2                          -->1(3eme place)
+systeme de classement au sein du meme grp: se fait tant que le nombre 
+d'équipe du meme grp est supérieur à 2
+1er tour: grpA a b c d: a->b,c,d  b->a,c,d  c->a,b,d ...
+--->grpA: 1=a, 2=c, 3=d, 4=b (mini-championat)
+
+1 match gagné = +3pts (peu importe le nb de buts)
+a 6pts  nb buts marqué=7buts  nb buts marqué contre lui=1but
+c 6pts  nb buts marqué=7buts                           =2but
+(faire ca pr ttes les équipes du grp)
+algérie 3-1 égypt
+
+
+notre site doit faire:
+-authentifications pour chaque organisateur
+-création d'événement par un organisateur (onglet de création visible que 
+pour l'organisateur)
+-préinscriptions des d'équipes-->le jour du tournoi: inscription 
+apres payement (stocker une équipe)
+-à partir du niveau des joueurs de la mm équipe détérminer 
+le niveau de l'équipe
+-aider l'organisateur à trouver une formule sportive pour un tour 
+ou tt le tournoi (combien d'équipes 
+dans chaque grp, combien de grp), lui donné des proposition et la 
+posibilité de saisir lui mm
+
+-------------------------------------------------------------------------
+-répartir les équipes dans des poules(grp) avec la méthode du serpentin
+(mais l'organisateur peut faire des pérmutations mais avec 
+téchnique drag and drop)
+-affecter les matchs aux térrain (tjr possibilité de les 
+modifié par l'organisateur)
+-afficher les feuilles de matchs pour les utilisateurs pour chaque tour
+(feuille1: grpA match1: a contre 
+b date/heure/terrain/score) visible pour tt le monde
+-organisateur saisie le résultat de chaque match à la fin 
+du match(saisir dans un champs)
+-organisateur clôture un tour et décide de la formule sportive suivante(s'il 
+avait décidé de la formule d'un seul tournoi)
+
+---------------------------------------------------------
+puis 2 cas: sois l'organisateur décide d'organiser un tournoi
+consolante sois décide d'éliminé les pérdant)
+-apres cloture d'un tour l'application fait le classement final de 
+chaque grp (classement apres avoir jouer)
+la on décide (apres avoir vu la formule) les matchs du tour suivant
+l'organisateur pourra modifier manuellement les grp
+-apres fin des tour, cloturer le tournoi et donner le champion, le 2eme place
+et le 3eme place.
+
+
+*****Notes sup****
+dans une poule il y'a des equipes
+
+l'inscription et la connection pour l'organisateur 
+1-page Connecxion d'organisateur / page inscription organisateur 
+2-page pre-inscription d'equipe et ses joueur 
+3-
+
+
